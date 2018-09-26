@@ -10,6 +10,8 @@ import com.facebook.soloader.SoLoader;
 
 import java.util.Arrays;
 import java.util.List;
+import com.facebook.react.BuildConfig;
+
 
 public class MainApplication extends Application implements ReactApplication {
 

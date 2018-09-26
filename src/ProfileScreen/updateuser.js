@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { AsyncStorage,View } from "react-native";
 import {Input,Picker, Container, Header,Toast,Root,Title, Content, List, ListItem,Button, Text, Icon, Left, Body, Right, Switch } from 'native-base';
 const PersianCalendarPicker = require('react-native-persian-calendar-picker');
-export default class ListIconExample extends Component {
+export default class ListIckonExample extends Component {
   constructor(props) {
     super(props);
     this.state = {showdate:false,username:"",email:"",phone:"",creditID:0,sex:"",birthday:""};

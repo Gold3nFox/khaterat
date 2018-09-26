@@ -55,6 +55,7 @@ target 'khateratapp' do
 
   pod 'react-native-camera', :path => '../node_modules/react-native-camera'
   
+  
 #  pod 'react-native-qrcode-scanner', :path => '../node_modules/react-native-qrcode-scanner'
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'

@@ -13,44 +13,44 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    firebase.messaging().hasPermission()
-      .then(enabled => {
-        if (enabled) {
-          firebase.messaging().getToken().then(token => {
-            console.log("LOG: ", token);
-          })
-          // user has permissions
-        } else {
-          firebase.messaging().requestPermission()
-            .then(() => {
-              // alert("User Now Has Permission")
-            })
-            .catch(error => {
-              // alert("Error", error)
-              // User has rejected permissions  
-            });
-        }
-      });
+    // firebase.messaging().hasPermission()
+    //   .then(enabled => {
+    //     if (enabled) {
+    //       firebase.messaging().getToken().then(token => {
+    //         console.log("LOG: ", token);
+    //       })
+    //       // user has permissions
+    //     } else {
+    //       firebase.messaging().requestPermission()
+    //         .then(() => {
+    //           // alert("User Now Has Permission")
+    //         })
+    //         .catch(error => {
+    //           // alert("Error", error)
+    //           // User has rejected permissions  
+    //         });
+    //     }
+    //   });
 }
 
 notificationListener(){ 
-  firebase.notifications().onNotification((notification) => {
+  // firebase.notifications().onNotification((notification) => {
 
   // Process your notification as required
-  const {
-    body,
-    data,
-    notificationId,
-    sound,
-    subtitle,
-    title
-  } = notification;
-  console.log("LOG: ", title, body, JSON.stringify(data))
-});
+  // const {
+//     body,
+//     data,
+//     notificationId,
+//     sound,
+//     subtitle,
+//     title
+//   } = notification;
+//   console.log("LOG: ", title, body, JSON.stringify(data))
+// });
 } 
 
 componentWillMount(){
-  this.notificationListener();
+  // this.notificationListener();
 }
 
   render() {

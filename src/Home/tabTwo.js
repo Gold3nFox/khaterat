@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   }
 })
 
-class App extends Component {
+class App2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -312,4 +312,4 @@ class App extends Component {
   }
 }
 
-export default withNavigation(App);
+export default withNavigation(App2);

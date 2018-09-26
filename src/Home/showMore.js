@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 
 import { Image,ListView,Alert,TouchableOpacity } from 'react-native';
 import { Container, Header,Title,Root ,Toast,Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
-export default class contentPage extends Component {
+export default class Content5Page extends Component {
   constructor(props) {
     super(props);
     this.state = {

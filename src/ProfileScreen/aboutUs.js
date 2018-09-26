@@ -2,7 +2,7 @@ import Orientation from 'react-native-orientation';
 import React, { Component } from 'react';
 import { Image,WebView } from 'react-native';
 import { Container,Title,Right, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
-export default class CardShowcaseExample extends Component {
+export default class CardShowcase4Example extends Component {
   
   componentDidMount() {
     Orientation.lockToPortrait();

@@ -16,7 +16,7 @@ import {
 } from "native-base";
 
 
-export default class HomeScreen extends React.Component {
+export default class Home2Screen extends React.Component {
   
   componentDidMount() {
     Orientation.lockToPortrait();

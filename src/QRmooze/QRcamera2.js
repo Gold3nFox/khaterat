@@ -6,7 +6,7 @@ import QRCodeScanner from 'react-native-qrcode-scanner';
 
 import { PermissionsAndroid } from 'react-native';
 
-export default class QR extends Component {
+export default class QR33 extends Component {
   onSuccess(e) {
     // alert(e.data);
     this.props.navigation.navigate('TabloPage',{ name: e.data});

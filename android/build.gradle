@@ -18,8 +18,11 @@ buildscript {
     }
 }
 
+
 allprojects {
     repositories {
+				// Add jitpack repository (added by react-native-spinkit)
+				maven { url "https://jitpack.io" }
         mavenLocal()
         jcenter()
         google()
@@ -28,4 +31,15 @@ allprojects {
             url "$rootDir/../node_modules/react-native/android"
         }
     }
+}
+
+subprojects {
+  project.configurations.all {
+     resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'com.android.support'
+              && !details.requested.name.contains('multidex') ) {
+           details.useVersion "27.1.0"
+        }
+     }
+  }
 }

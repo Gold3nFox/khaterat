@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import { AsyncStorage } from "react-native";
 
-export default class mynews extends Component {
+export default class Mynews extends Component {
   constructor(props) {
     super(props);
     this.state = {size:0 ,loading : false,basic: true,loading: true,

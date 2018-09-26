@@ -18,7 +18,7 @@ const routes = ["خانه","موزه چندرسانه ای","پیام ها","د�
 const pages = ["Homeindex","QRcamera2","mynews","aboutUs","myProfile","Login"];
 const num  = ["0","1","2","3","4","5"];
 const icons = ["home","md-qr-scanner","megaphone","ios-contacts","person","ios-arrow-back"]
-export default class SideBar extends React.Component {
+export default class Side333Bar extends React.Component {
 
   componentDidMount() {
     Orientation.lockToPortrait();

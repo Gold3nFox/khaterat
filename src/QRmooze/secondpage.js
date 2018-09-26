@@ -11,7 +11,7 @@ const cards = [
   }
 ];
 
-export default class SecondPage extends Component {
+export default class Second2Page extends Component {
   constructor(props) {
     super(props)
     this.state = {

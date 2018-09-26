@@ -1,5 +1,7 @@
 import Orientation from 'react-native-orientation';
 var API_URL = require('../config/config.js');
+import { Sae,Hoshi } from 'react-native-textinput-effects';
+import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import React, { Component,resizeMode } from 'react';
 import {Image} from 'react-native';
 import {
@@ -24,9 +26,9 @@ import {
     Right
   } from "native-base";
 import { DrawerNavigator } from "react-navigation";
-import { AsyncStorage } from "react-native";
+import { AsyncStorage,TextInput } from "react-native";
 
-export default class login extends Component {
+export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {Username : "" , Password : "" , loading : false, token : ""};
@@ -59,6 +61,7 @@ export default class login extends Component {
           loginHandler(){
             // alert(API_URL + '/auth/login');
             this.setState({loading : true});
+            // alert('sela');
             const { navigate } = this.props.navigation;
             fetch(API_URL + '/auth/login', {
               method: 'POST',
@@ -122,20 +125,22 @@ export default class login extends Component {
         </Header>
         <Content>
           <Form style = {{marginTop : 150,marginHorizontal:20}}>
-              <Item floatingLabel >
+              <Item floatingLabel>
               <Icon style ={{color:'lightblue'}} active name="person" />
-              <Input  returnKeyType={ "next" } blurOnSubmit={false}  onChangeText={this.usernameUpdate.bind(this)} onSubmitEditing={() => this.focusPasswordInput()} />
+              <Input returnKeyType={ "next" } blurOnSubmit={false}  onChangeText={this.usernameUpdate.bind(this)} onSubmitEditing={() => this.focusPasswordInput()} />
               <Label style ={{alignSelf:"flex-end", color:'lightblue'}}>ایمیل :</Label>
               </Item>
 
+
               <Item floatingLabel>
               <Icon style ={{color:'lightblue'}}active name="lock" />
-              <Label style ={{alignSelf:"flex-end",color:'lightblue'}}>رمز عبور :</Label>
               <Input getRef={(input) => { this.textInput = input; }} returnKeyType={ "done" } textContentType="password" secureTextEntry={true} onChangeText={this.passwordUpdate.bind(this)}/>
+              <Label style ={{alignSelf:"flex-end",color:'lightblue'}}>رمز عبور :</Label>
               </Item>
 
           </Form>
-          
+
+
           <Button
             block
             rounded
@@ -144,6 +149,7 @@ export default class login extends Component {
               justifyContent: "center",
               alignItems: "center"}}
             onPress={() => {
+              // alert('sela ' + this.state);
               this.loginHandler();
             }}
           >

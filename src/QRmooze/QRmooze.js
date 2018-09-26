@@ -10,7 +10,7 @@ const cards = [
   }
 ];
 
-export default class DeckSwiperExample extends Component {
+export default class DeckSwiper345Example extends Component {
   onSuccess(e) {
     Linking
       .openURL(e.data)

@@ -7,7 +7,7 @@ import { AsyncStorage } from "react-native";
 import {ListView,Alert} from 'react-native';
 import { Container,Root, Header,Toast,Badge, Content,Icon, List, ListItem,Title, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
 import OrientationLoadingOverlay from 'react-native-orientation-loading-overlay';
-export default class ListThumbnailExample extends Component {
+export default class ListThumbnail2Example extends Component {
   constructor(props) {
     super(props);
     this.state = {

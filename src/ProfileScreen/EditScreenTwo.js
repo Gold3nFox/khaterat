@@ -3,7 +3,7 @@ var API_URL = require('../config/config.js');
 import React, { Component } from 'react';
 import { AsyncStorage } from "react-native";
 import { Container, Header,Toast,Root,Title, Content, List, ListItem,Button, Text, Icon, Left, Body, Right, Switch } from 'native-base';
-export default class ListIconExample extends Component {
+export default class ListISconExample extends Component {
   constructor(props) {
     super(props);
     this.state = {username:"",email:"",phone:"",creditID:"",money:""};

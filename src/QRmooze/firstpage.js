@@ -11,7 +11,7 @@ const cards = [
   }
 ];
 
-export default class DeckSwiperExample extends Component {
+export default class DeckSwniperExample extends Component {
   constructor(props) {
     super(props)
     this.state = {

@@ -25,7 +25,7 @@ import {
 import { Image,ScrollView,Alert } from 'react-native';
 
 
-export default class login extends Component {
+export default class Register extends Component {
     constructor(props) {
         super(props);
         this.state = {Username : "" ,credit_id : "", Password : "",Password2: "", Email :"" , Phone :"" ,loading : false};

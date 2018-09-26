@@ -4,8 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.oblador.vectoricons.VectorIconsPackage;
-import io.invertase.firebase.RNFirebasePackage;
 import com.github.yamill.orientation.OrientationPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import org.reactnative.camera.RNCameraPackage;
@@ -35,6 +33,8 @@ import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 import java.util.Arrays;
 import java.util.List;
+import com.facebook.react.BuildConfig;
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -49,11 +49,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.asList(
         new MainReactPackage(),
-            new VectorIconsPackage(),
-            new RNFirebasePackage(),
-            new OrientationPackage(),
-            new ReactVideoPackage(),
-            new RNCameraPackage(),
+        new RNCameraPackage(),
+        new OrientationPackage(),
+        new ReactVideoPackage(),
         new RNFirebasePackage(),
         // add/remove these packages as appropriate
         new RNFirebaseAdMobPackage(),

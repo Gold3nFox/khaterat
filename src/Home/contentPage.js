@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { Image,ListView,Alert } from 'react-native';
 import OrientationLoadingOverlay from 'react-native-orientation-loading-overlay';
 import { Container, Header,Title ,Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
-export default class contentPage extends Component {
+export default class Content2Page extends Component {
   constructor(props) {
     super(props);
     this.state = {

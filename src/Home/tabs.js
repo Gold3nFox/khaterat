@@ -4,7 +4,7 @@ import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 import Tab3 from './tabThree';
 
-export default class mytabs extends Component {
+export default class Mytabs extends Component {
     
   render() {
     return (

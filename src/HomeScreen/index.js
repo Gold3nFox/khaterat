@@ -38,7 +38,6 @@ import { DrawerNavigator,StackNavigator } from "react-navigation";
 
 const HomeScreenRouter = DrawerNavigator(
   {
-
     Homeindex: {screen : Homeindex},
     QRcamera : {screen : QRcamera},
     QRcamera2 : {screen : QRcamera2},
